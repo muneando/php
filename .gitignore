@@ -1,3 +1,7 @@
+/.buildpath
+/.project
+/.settings
+
 .vagrant
 Berksfile.lock
 Gemfile.lock
