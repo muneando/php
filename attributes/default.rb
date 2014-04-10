@@ -34,6 +34,8 @@ when 'rhel', 'fedora'
   default['php']['fpm_user']      = 'nobody'
   default['php']['fpm_group']     = 'nobody'
   default['php']['ext_dir']       = "/usr/#{lib_dir}/php/modules"
+  default['php']['timezone']      = 'GMT'
+
   if node['platform_version'].to_f < 6
     default['php']['packages'] = %w{ php53 php53-devel php53-cli php-pear }
   else
